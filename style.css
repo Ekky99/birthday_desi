@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.message-container {
+    background-color: #ffe4e1;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.animated-text {
+    font-size: 1.5em;
+    color: #ff69b4;
+    animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
