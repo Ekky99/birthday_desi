@@ -12,6 +12,11 @@ function updatePanels(paramPanel) {
 
   }
 }
+function unmuteAudio() {
+  const audio = document.getElementById('myAudio');
+  audio.muted = false; // Unmute the audio
+  audio.play();
+}
 
 function loadBonusgift(){
   let bonusButton = document.querySelector('#BonusButton');
@@ -21,7 +26,7 @@ function loadBonusgift(){
     updatePanels(panelShowing);
     panelShowing = panelShowing == "HiddenEnding" ? null : "HiddenEnding";
     updatePanels(panelShowing);
-      
+    unmuteAudio();
   })
 }
 function launchConfetti() {
