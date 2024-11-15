@@ -55,14 +55,11 @@ function launchConfetti() {
       if (Date.now() < end) {
         requestAnimationFrame(frame);
       }
-
-      let sound = new Audio('')
     }());
     window.onload = launchConfetti;
     
     const audio = document.getElementById('myAudio');
-    audio.muted = true; // Start muted
-    // Attempt to play the audio
+    audio.muted = true;
     audio.play()
       .then(() => {
         console.log('Audio is playing.');
